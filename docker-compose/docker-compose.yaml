@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: ../app
+    ports:
+    - 8080:8080
+    environment:
+      MY_NAME: ${MY_NAME:-okteto}
+      MY_COLOR: ${MY_COLOR:-blue}
