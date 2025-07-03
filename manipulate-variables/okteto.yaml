@@ -1,6 +1,6 @@
 deploy:
 - name: update secrets and deploy compose
   command: |
-    export MY_FIRST_NAME=$MY_NAME
-    export MY_FAVORITE_COLOR=$MY_COLOR
+    export MY_NAME=$MY_FAVORITE_NAME
+    export MY_COLOR=$MY_FAVORITE_COLOR
     okteto deploy -f docker-compose.yaml

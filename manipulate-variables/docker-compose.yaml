@@ -5,5 +5,5 @@ services:
     ports:
     - 8080:8080
     environment:
-      MY_FIRST_NAME: ${MY_FIRST_NAME:-okteto}
-      MY_FAVORITE_COLOR: ${MY_FAVORITE_COLOR:-blue}
+      MY_NAME: ${MY_NAME:-okteto}
+      MY_COLOR: ${MY_COLOR:-blue}
