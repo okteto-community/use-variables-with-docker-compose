@@ -11,7 +11,7 @@ This sample uses Infisical and AWS, but the concepts apply for any Secret Manage
 
 The first step is to configure a trust relationship between Okteto and your AWS account.  This will be accomplished using Okteto's Cloud Credential features together with AWS' OIDC federation feature. 
 
-Please refer to Okteto's documentation on [how to create a trust relationship between's Okteto OIDC and your AWS account](https://www.okteto.com/docs/admin/cloud-credentials/aws-cloud-credentials/) to complete this step. This needs to be performed once per Okteto instance.
+Please refer to Okteto's documentation on [how to create a trust relationship between your Okteto instance and your AWS account](https://www.okteto.com/docs/admin/cloud-credentials/aws-cloud-credentials/) to complete this step. This needs to be performed once per Okteto instance.
 
 ### Configure Infisical Machine Identity
 
@@ -36,7 +36,7 @@ For lhe last part of the configuration, we will create the following Admin varia
 - `INFISICAL_PROJECT_ID`: [Your Infisical Project ID](https://infisical.com/docs/cli/faq#where-can-i-find-my-project-id).
 
 
-> Please refer to Okteto's documentation on [how to set and use variables for more information](https://www.okteto.com/docs/core/okteto-variables/#setting-okteto-variables). 
+> For more information, please refer to Okteto's documentation on [how to set and use variables](https://www.okteto.com/docs/core/okteto-variables/#setting-okteto-variables). 
 
 ## Test your configuration
 
