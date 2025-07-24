@@ -1,0 +1,11 @@
+deploy:
+  image: infisical/cli
+  commands:
+  - name: get secrets from secret manager and deploy compose
+    command: |
+      INFISICAL_TOKEN=$(infisical login --silent --plain --method=aws-iam --machine-identity-id="$INFISICAL_MACHINE_IDENTITY_ID")
+      infisical secrets --plain --projectId="$INFISICAL_PROJECT_ID" --token "$INFISICAL_TOKEN"  > .env
+      okteto deploy -f docker-compose.yaml
+
+
+    
